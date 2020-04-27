@@ -34,10 +34,7 @@ class Dashboard extends Component {
         const mappedSongs = this.state.songs.map(song => {
             return (
                 <div key={song.id}>
-                    <View 
-                        edit={this.state.edit}
-                        toggleEdit={this.toggleEdit}
-                        song={song}/>
+                    <View song={song}/>
                 </div>
             )
         })
